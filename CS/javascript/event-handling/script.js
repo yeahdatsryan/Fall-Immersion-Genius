@@ -1,5 +1,15 @@
-document.getElementById("MyButton").addEventListener("'click', function (){
-  image = document.createElement('img');
-  image.src = "https://i.scdn.co/image/ab67616d0000b273090b1f9557a6d23c0817bd88";
-  document.body.appendChild(image);
+document.addEventListener ("DOMContentLoaded", () => {
+     const form = document.getElementById("myForm")
+     form.addEventListener ('submit', function (event) ){
+          event.preventDefault)
+          name = document.getElementById("name")
+          email = document.getElementById("email")
+          message = document.getElementById("message")
+          if (name && email && message) {
+               alert('Form submitted successfully!\nName: ${name)\nEmail: ${email)\nMessage: ${message)');
+          }
+          else{
+                alert('Fill all the fields!');
+          }
+     });
 });
